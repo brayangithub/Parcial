@@ -20,3 +20,20 @@ for(int x=0;x<texto.length();x++) {
 }
 }
 }
+public static boolean consonante(char c){
+    if ((Character.toLowerCase(c)=='a') || (Character.toLowerCase(c)=='e') || (Character.toLowerCase(c)=='i') || (Character.toLowerCase(c)=='o') || (Character.toLowerCase(c)=='u'))
+    return true;
+    else
+    return false;
+    }
+    for(int y=0;y<texto.length();y++) {	
+    if !consonante(texto.charAt(y))
+    contador++;
+    }
+    for(int y=0;y<texto.length();y++) {	
+    if ((Character.isLetter(texto.charAt(y))) && (!consonante(texto.charAt(y))));
+    contador++;
+    }
+    System.out.println("La palabra " + texto + "contiene " + contador + " vocales");
+    System.out.println("La palabra " + texto + "contiene " + contador + " consonantes");
+}
